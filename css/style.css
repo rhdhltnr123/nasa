@@ -1,23 +1,28 @@
 /* style.css */
-/* 버튼 줄내림 */
 
+/* 버튼 줄내림 금지 */
 .btn {
   white-space: nowrap;
 }
 
 .container,
 .container-fluid {
-  /* outline: 1px solid #333; */
+  /* outline: 1px solid #000; */
 }
 
 #main-title {
   width: 100%;
   height: 800px;
-  color: #fff;
-  background: #ccc;
-  background-image: url(../images/ISS_astronaut.jpg);
+
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../images/ISS_astronaut.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  color: #fff;
 }
 
 #main-title .title p {
