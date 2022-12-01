@@ -5,28 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>나사 글랜연구센터 한국 홈페이지</title>
-    <!-- CSS only -->
+    <!-- 부트스트랩 CSS only -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <!-- https://www1.grc.nasa.gov -->
     <div id="main-title">
       <header class="container pt-3">
         <nav class="navbar navbar-expand-sm navbar-dark">
           <div class="container-fluid">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="javascript:void(0)">
               <img
-                src="./images/logo-nasa.svg"
+                src="images/logo-nasa.svg"
                 alt="나사 글랜연구센터"
                 width="60"
               />
             </a>
-            <!-- 모바일 토근 버튼 -->
+            <!-- 모바일 토글 버튼 -->
             <button
               class="navbar-toggler"
               type="button"
@@ -37,7 +38,7 @@
             </button>
             <!-- 네비게이션 링크 -->
             <div class="collapse navbar-collapse" id="mynavbar">
-              <ul class="navbar-nav me-auto">
+              <ul class="navbar-nav mx-auto">
                 <li class="nav-item dropdown">
                   <a
                     class="nav-link dropdown-toggle"
@@ -47,13 +48,9 @@
                     >소개</a
                   >
                   <ul class="dropdown-menu">
-                    <li>
-                      <a class="dropdown-item" href="#">글랜 우주센터</a>
-                    </li>
-                    <li><a class="dropdown-item" href="#">업적</a></li>
-                    <li>
-                      <a class="dropdown-item" href="#">역사</a>
-                    </li>
+                    <li><a class="dropdown-item" href="#">글랜 우주센터</a></li>
+                    <li><a class="dropdown-item" href="#">연구소 현황</a></li>
+                    <li><a class="dropdown-item" href="#">글랜 히스토리</a></li>
                   </ul>
                 </li>
                 <li class="nav-item dropdown">
@@ -65,26 +62,22 @@
                     >교육</a
                   >
                   <ul class="dropdown-menu">
-                    <li>
-                      <a class="dropdown-item" href="#">교육내용</a>
-                    </li>
+                    <li><a class="dropdown-item" href="#">교육내용</a></li>
                     <li><a class="dropdown-item" href="#">인턴쉽</a></li>
-                    <li>
-                      <a class="dropdown-item" href="#">우주인 체험</a>
-                    </li>
+                    <li><a class="dropdown-item" href="#">우주인 되기</a></li>
                   </ul>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">시설안내</a>
+                  <a class="nav-link" href="javascript:void(0)">시설안내</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">항공역학</a>
+                  <a class="nav-link" href="javascript:void(0)">항공역학</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">우주공학</a>
+                  <a class="nav-link" href="javascript:void(0)">우주공학</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">연구</a>
+                  <a class="nav-link" href="javascript:void(0)">연구</a>
                 </li>
               </ul>
               <form class="d-flex">
@@ -93,24 +86,25 @@
                   type="text"
                   placeholder="검색어 입력"
                 />
-                <button class="btn btn-primary" type="button">검색</button>
+                <button class="btn btn-primary" type="button">
+                  <span>검색</span>
+                </button>
               </form>
             </div>
           </div>
         </nav>
       </header>
       <div class="title container">
+        <h1 class="display-4 mb-3">Shaping the world of tomorrow</h1>
+        <p>
+          기술 개발을 통해 우주를 향한 탐험을 발전시키고<br />
+          우주 여행의 혁명을 만들어 나갑니다
+        </p>
         <div class="col-lg-6 col-md-12 col-sm-12">
-          <h1 class="display-4">내일의 세계를 형성하다</h1>
-          <p>
-            기술을 개발에<br />
-            대한 추가 탐색을 가능하게 할 것입니다<br />
-            우주와 항공 여행에 혁명을 일으키다
-          </p>
-          <!-- 영상비율을 유지 -->
-          <div class="ratio ratio-16x9">
+          <!-- ratio로 영상비율을 유지하자! -->
+          <div class="ratio ratio-16x9 mt-5">
             <iframe
-              class="border border-3 mt-4"
+              class="mt-4 border border-3"
               src="https://www.youtube.com/embed/BgF10YLYadk"
               title="YouTube video player"
               frameborder="0"
@@ -119,10 +113,69 @@
             ></iframe>
           </div>
         </div>
+        <!-- col -->
       </div>
       <!-- title -->
     </div>
     <!-- main-title -->
+
+    <!-- community 소개 -->
+    <section id="community">
+      <div class="container py-5">
+        <h2 class="mb-4 my-text-light">자랑스러운 오하이오 커뮤니티</h2>
+        <div class="row">
+          <!-- 기본 2단, 중간(md)이상이면 4단 -->
+          <div class="col-6 col-md-3">
+            <a href="#">
+              <img
+                class="img-fluid"
+                src="images/27194656925_0eedc59044_h-300x300.jpg"
+                alt="1"
+              />
+              <h4 class="text-light h5 mt-3 text-center">오하이오 경제 혁신</h4>
+            </a>
+          </div>
+          <!-- col -->
+          <div class="col-6 col-md-3">
+            <a href="#">
+              <img
+                class="img-fluid"
+                src="images/27194668235_6bcc40da15_o-300x300.jpg"
+                alt="2"
+              />
+              <h4 class="text-light h5 mt-3 text-center">교육 프로그램</h4>
+            </a>
+          </div>
+          <!-- col -->
+          <div class="col-6 col-md-3">
+            <a href="#">
+              <img
+                class="img-fluid"
+                src="images/27389280410_4915f596bf_o-300x300.jpg"
+                alt="3"
+              />
+              <h4 class="text-light h5 mt-3 text-center">커뮤니티 이벤트</h4>
+            </a>
+          </div>
+          <!-- col -->
+          <div class="col-6 col-md-3">
+            <a href="#">
+              <img
+                class="img-fluid"
+                src="images/27667448395_a60c9c5e9f_b-1-300x300.jpg"
+                alt="4"
+              />
+              <h4 class="text-light h5 mt-3 text-center">
+                나사과학센터 방문하기
+              </h4>
+            </a>
+          </div>
+          <!-- col -->
+        </div>
+        <!-- row -->
+      </div>
+      <!-- container -->
+    </section>
 
     <!-- 부트스트랩 JS -->
     <script
