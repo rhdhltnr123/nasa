@@ -1,7 +1,7 @@
 /* style.css */
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 /* 모바일 배경처리 */
@@ -13,65 +13,155 @@ a {
 }
 
 .btn {
-    white-space: nowrap;
+  white-space: nowrap;
 }
 
 section h2 {
-    font-weight: bold;
+  font-weight: bold;
 }
 
-
+body {
+  margin-bottom: 400px;
+}
 /* .container, .container-fluid {
     outline: 1px solid #000;
 } */
 
 #main-title {
-    width: 100%;
-    height: 100vh;
-    background-color: #ccc;
-    background-image:
-    linear-gradient(90deg, rgba(0, 0, 0, 0.918) 0%, rgba(255, 255, 255, 0) 100%), url(../images/ISS_astronaut.jpg);
-    color: #fff;
-    background-size: cover;
-    background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  background-color: #ccc;
+  background-image: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.918) 0%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    url(../images/ISS_astronaut.jpg);
+  color: #fff;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 #main-title .title {
-    height: calc(100% - 90px);
-    display: flex;
-    flex-direction: column;
+  height: calc(100% - 90px);
 }
 
 #main-title .title p {
-    font-size: 25px;
+  font-size: 25px;
 }
 
 #main-title .title {
-    padding-top: 50px;
+  padding-top: 50px;
 }
 
 /* #main-title .title iframe {
     outline: 5px solid #fff;
 } */
 
-
 #community {
-    background-color: #000;
-    background-image: 
-        linear-gradient(rgba(0,0,0, 1), rgba(0,0,0,0.2)),
-        url('../images/cleveland_at_night.jpg');
-    background-size: cover;
-    /* 배경 고정 */
-    background-repeat: no-repeat;
-    /* background-attachment: contain; */
-    background-position: center top;
-    background-attachment: fixed;
+  background-color: #000;
+  background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2)),
+    url("../images/cleveland_at_night.jpg");
+  background-size: cover;
+  /* 배경 고정 */
+  background-repeat: no-repeat;
+  /* background-attachment: contain; */
+  background-position: center top;
+  background-attachment: fixed;
 }
 
 .my-text-light {
-    color: #98daf1;
+  color: #98daf1;
 }
 
 .my-text-dark {
-    color: #0b3d91;
+  color: #0b3d91;
+}
+
+/* community2 */
+
+#community2 a {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+#community2 a img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#community2 .col-4 {
+  margin-bottom: 20px;
+}
+
+#community2 {
+  background-color: #000;
+  background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2)),
+    url("../images/1-1.jpg");
+  background-size: cover;
+  /* 배경 고정 */
+  background-repeat: no-repeat;
+  /* background-attachment: contain; */
+  background-position: center top;
+  /* background-attachment: fixed; */
+  position: relative;
+}
+
+#community2 a h4 {
+  width: 100%;
+  height: 50px;
+  background: rgba(11, 60, 145, 0.89);
+  word-break: keep-all;
+  position: absolute;
+  bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#community2 a .asd {
+  bottom: -8px;
+  background: rgba(11, 60, 145, 1);
+  transition: opacity 0.5s;
+  line-height: 2rem;
+}
+
+#community2 .container .row .col-4:hover .asd {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  font-size: 20px;
+}
+
+#community2 .container .row .asd {
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+/* 버튼 */
+#community2 .container .row button {
+  background: none;
+  font-weight: bold;
+  margin-top: 50px;
+}
+
+#community2 .container .row button:hover {
+  color: #ccc;
+}
+
+@media (max-width: 768px) {
+  #community2 h4 {
+    font-size: 14px !important;
+  }
+  #community2 a .asd {
+    font-size: 10px !important;
+    line-height: 1.5rem;
+  }
 }
